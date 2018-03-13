@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="MainMenuAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="439.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="hashdict.MainMenuController">
+  <children>
+    <ImageView blendMode="SRC_OVER" cache="false" fitHeight="162.0" fitWidth="439.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false" visible="true">
+      <image>
+        <Image url="@../images/sunset.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="textboxbutton" layoutX="27.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleNotepadButton" prefHeight="49.0" prefWidth="48.0" text="" />
+    <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="37.0" layoutY="69.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../images/Book.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="24.0" layoutY="28.0" text="Enter Text" textFill="WHITE" />
+    <Label layoutX="366.0" layoutY="28.0" text="Open File" textFill="WHITE" />
+    <Label layoutX="172.0" layoutY="56.0" text="Created By" textFill="WHITE">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="filebutton" layoutX="364.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleFileButton" prefHeight="49.0" prefWidth="56.0" text="" />
+    <ImageView fitHeight="23.999977111816406" fitWidth="27.0" layoutX="379.0" layoutY="69.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../images/File.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="124.0" layoutY="83.0" text="Dustin Fitzpatrick" textFill="WHITE">
+      <font>
+        <Font size="25.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="143.0" layoutY="111.0" text="Allen Williams" textFill="WHITE" />
+    <Label font="$x1" layoutX="146.0" layoutY="17.0" text="Spell Checker" textFill="WHITE" />
+  </children>
+</AnchorPane>

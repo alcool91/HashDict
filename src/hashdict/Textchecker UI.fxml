@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="textBoxAnchorPane" blendMode="SRC_OVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="400.0" prefWidth="600.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="hashdict.EnterTextBoxController">
+  <children>
+    <ImageView blendMode="SRC_OVER" fitHeight="400.0" fitWidth="600.0" focusTraversable="true" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../images/sunset.png" />
+      </image>
+    </ImageView>
+    <TextArea fx:id="incorrectlist" disable="false" editable="false" layoutX="371.0" layoutY="39.0" opacity="1.0" prefHeight="347.0" prefWidth="200.0" text="" wrapText="true" />
+    <TextArea fx:id="inputtxt" blendMode="SRC_OVER" focusTraversable="true" layoutX="14.0" layoutY="39.0" opacity="1.0" pickOnBounds="false" prefHeight="302.0" prefWidth="339.0" visible="true" wrapText="true" />
+    <Button fx:id="checkbtn" layoutX="14.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleCheckButton" prefHeight="31.0" prefWidth="91.0" text="Check" textFill="BLACK" />
+    <Button fx:id="cancelbtn" layoutX="138.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="31.0" prefWidth="91.0" text="Clear" textFill="BLACK" />
+    <Button fx:id="exitbtn" layoutX="262.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="31.0" prefWidth="91.0" text="Exit" textFill="BLACK" />
+    <Label layoutX="143.0" layoutY="14.0" text="Input Text Here" textFill="WHITE" />
+    <Label layoutX="430.0" layoutY="14.0" text="Incorrect words" textFill="WHITE" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="fileopeneranchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1009.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="hashdict.FileOpenerController">
+  <children>
+    <ImageView fitHeight="651.0" fitWidth="1009.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../images/sunset.png" />
+      </image>
+    </ImageView>
+    <TextArea id="InputTextF" fx:id="inputfiletext" editable="false" layoutX="14.0" layoutY="332.0" prefHeight="214.0" prefWidth="981.0" wrapText="true" />
+    <TextArea fx:id="misspelledwordstxt" layoutX="14.0" layoutY="49.0" prefHeight="226.0" prefWidth="981.0" wrapText="true" />
+    <Label layoutX="278.0" layoutY="14.0" text="The words that are incorrectly spelled are" textFill="WHITE">
+      <font>
+        <Font size="25.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="333.0" layoutY="286.0" text="The input from the text file was" textFill="WHITE" />
+    <Button fx:id="openfilebtn" layoutX="278.0" layoutY="583.0" mnemonicParsing="false" onAction="#handleOpenFileButton" prefHeight="34.0" prefWidth="224.0" text="Open File" />
+    <Button fx:id="exitbtn" layoutX="509.0" layoutY="583.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="34.0" prefWidth="224.0" text="Exit" />
+  </children>
+</AnchorPane>
